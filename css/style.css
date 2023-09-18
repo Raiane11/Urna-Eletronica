@@ -1,0 +1,188 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #909090;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.chapas{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 15px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.container .button-finish{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: #e8e7e7;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: red;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.container-chapas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container input[name="result"]{
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: #e8e7e7;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container input[name="result-votos"]{
+    width: 300px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: #e8e7e7;
+    font-weight: bold;
+}
+
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+    border-radius: 2px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.button{
+    width: 30%;
+    height: 60px;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: left;
+    background-color: #141414;
+    font-size: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    color: white;
+}
+
+.button-container .button-escolha{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.button-1{
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.button-2{
+    background-color: orange;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.button-3{
+    background-color: green;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 710px){
+    .container{
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .chapas{
+        width: 90%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 7.5px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .container input[name="result"]{
+        width: 20px;
+        height: 25px;
+    }
+    .container input[name="result-votos"]{
+        width: 150px;
+        padding: 5px;
+        margin-top: 7.5px;
+    }
+    .container .button-finish{
+        margin-top: 10px;
+        text-transform: none;
+    }
+    .button{
+        width: 25%;
+        height: 30px;
+        font-size: 15px;
+    }
+    .button-container{
+        padding: 10px;
+    }
+    .button-container .button-escolha{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .button-1{
+        height: 30px;
+    }
+}
